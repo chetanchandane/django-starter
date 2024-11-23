@@ -1,13 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first ever app!</title>
-</head>
-<body>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <h1> This is the First ever app.</h1>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+    Career page
+{% endblock title %}
+
+{% block content %}
+    This is our Career Page | django-starter.
+{% endblock content %}
